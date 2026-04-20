@@ -1,0 +1,12 @@
+{
+  "name": "products-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API mock de productos para proyecto-2",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}
