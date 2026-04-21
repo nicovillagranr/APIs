@@ -22,13 +22,14 @@
 
 // 1) Importamos json-server. Es la misma librería que usas en local.
 const jsonServer = require('json-server');
+const path = require('path');
 
 // 2) Creamos una instancia del servidor (un Express por debajo, realmente).
 const server = jsonServer.create();
 
-// 3) Le indicamos de dónde leer los datos. La ruta es relativa a la raíz
-//    del proyecto desplegado en Vercel, donde vive db.json.
-const router = jsonServer.router('db.json');
+// 3) Ruta absoluta a db.json. En Vercel el CWD de la función no coincide
+//    con la raíz del proyecto, así que resolvemos desde __dirname.
+const router = jsonServer.router(path.join(__dirname, '..', 'db.json'));
 
 // 4) Middlewares por defecto de json-server: logger, CORS básico,
 //    parseo de JSON en el body, servir la home page, etc.
