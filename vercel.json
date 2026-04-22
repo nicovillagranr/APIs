@@ -1,11 +1,11 @@
 {
     "functions": {
-        "products-api/api/index.js": {
-            "includeFiles": "products-api/db.json"
+        "01-products-api/api/index.js": {
+            "includeFiles": "01-products-api/db.json"
         }
     },
     "rewrites": [
-        { "source": "/(.*)", "destination": "/products-api/api/index.js" }
+        { "source": "/(.*)", "destination": "/01-products-api/api/index.js" }
     ],
     "headers": [
         {
