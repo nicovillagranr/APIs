@@ -4,8 +4,7 @@
   "private": true,
   "description": "API mock de productos para proyecto-2",
   "scripts": {
-    "start": "json-server --watch db.json --port 3000 --static public",
-    "download-images": "node scripts/download-images.js"
+    "start": "json-server --watch db.json --port 3000 --static public"
   },
   "dependencies": {
     "json-server": "^0.17.4"

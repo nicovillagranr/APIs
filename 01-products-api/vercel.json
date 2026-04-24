@@ -4,8 +4,8 @@
             "includeFiles": "db.json"
         }
     },
-    "rewrites": [
-        { "source": "/(.*)", "destination": "/api/index.js" }
+    "rewrites":[
+        {"source": "/((?!images/).*)" , "destination": "/api/index.js"}
     ],
     "headers": [
         {
