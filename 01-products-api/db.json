@@ -6,7 +6,7 @@
             "categoria": "Hombres",
             "tipo": "Calzado",
             "descripcion": "Calzado para caballero marca Lugo Conti de uso casual en color besh. Este bonito calzado es un zapato tipo tenis para dar mucho mas comodidad, es ligero y con un diseño atractivo a la vista, su suela corrida en tono beige le da el contraste perfecto para lucirlos donde quieras",
-            "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_vzwU6T5xfW2AgPUZ-KQwpjjMuBiXdnIgZy8Mv77OubNsQHlEceasiCVtFhcMscxA7gEKPnC-gNqf1Rtay4hGGx6aW6l4OPctK-CZv7cnHR_pW13DOxs-FV1ETGpDl-X50k-dE9ZjtunBpxmnig7S7iGi4V3WuxMsLdBWACaUClb9dSB6u0w4pgPG9cae/s1600/Dise%C3%B1o%20sin%20t%C3%ADtulo%20%2852%29.png",
+            "image": "/images/1.jpg",
             "precio": 150
         },
         {
@@ -15,7 +15,7 @@
             "categoria": "Hombres",
             "tipo": "Abrigos",
             "descripcion": "Abrigo largo para caballero confeccionado en lana virgen con forro interior satinado. Corte recto, solapa amplia y doble botonadura. Ideal para climas fríos con un estilo elegante y atemporal.",
-            "image": "https://picsum.photos/seed/abrigo-hombre/600/600",
+            "image": "/images/2.jpg",
             "precio": 220
         },
         {
@@ -24,7 +24,7 @@
             "categoria": "Hombres",
             "tipo": "Ropa interior",
             "descripcion": "Pack de tres bóxers de algodón elástico transpirable. Cintura reforzada sin costuras que aprietan. Disponible en colores neutros combinables. Comodidad diaria garantizada.",
-            "image": "https://picsum.photos/seed/boxer-hombre/600/600",
+            "image": "/images/3.jpg",
             "precio": 35
         },
         {
@@ -33,7 +33,7 @@
             "categoria": "Mujeres",
             "tipo": "Calzado",
             "descripcion": "Botines de cuero sintético con cierre lateral y tacón cubano de 5 cm. Acabado mate en color camel. Suela antideslizante y plantilla acolchada para uso prolongado.",
-            "image": "https://picsum.photos/seed/botines-mujer/600/600",
+            "image": "/images/4.jpg",
             "precio": 120
         },
         {
@@ -42,7 +42,7 @@
             "categoria": "Mujeres",
             "tipo": "Abrigos",
             "descripcion": "Gabardina clásica con cinturón ajustable y doble botonadura. Tejido tratado contra la lluvia ligera. Corte entallado en la cintura para siluetear la figura.",
-            "image": "https://picsum.photos/seed/gabardina-mujer/600/600",
+            "image": "/images/5.jpg",
             "precio": 180
         },
         {
@@ -51,7 +51,7 @@
             "categoria": "Mujeres",
             "tipo": "Ropa interior",
             "descripcion": "Conjunto de sujetador sin aros y braga a juego en encaje francés. Forro interior suave, tirantes regulables y cierre trasero de tres broches.",
-            "image": "https://picsum.photos/seed/encaje-mujer/600/600",
+            "image": "/images/6.jpg",
             "precio": 55
         },
         {
@@ -60,7 +60,7 @@
             "categoria": "Niños",
             "tipo": "Calzado",
             "descripcion": "Zapatillas deportivas ligeras con cierre de velcro para que los peques se las pongan solos. Suela flexible de caucho y refuerzos en la puntera para resistir el juego intenso.",
-            "image": "https://picsum.photos/seed/zapatillas-nino/600/600",
+            "image": "/images/7.jpg",
             "precio": 65
         },
         {
@@ -69,7 +69,7 @@
             "categoria": "Niños",
             "tipo": "Abrigos",
             "descripcion": "Parka acolchada con capucha desmontable y relleno sintético ligero. Bolsillos laterales con cremallera y cordón ajustable en la cintura. Repelente al agua.",
-            "image": "https://picsum.photos/seed/parka-nino/600/600",
+            "image": "/images/8.jpg",
             "precio": 95
         },
         {
@@ -78,7 +78,7 @@
             "categoria": "Niños",
             "tipo": "Ropa interior",
             "descripcion": "Camiseta térmica de manga larga en tejido microfibra. Conserva el calor corporal sin abultar bajo la ropa. Costuras planas para evitar roces en pieles sensibles.",
-            "image": "https://picsum.photos/seed/termica-nino/600/600",
+            "image": "/images/9.jpg",
             "precio": 22
         },
         {
@@ -87,7 +87,7 @@
             "categoria": "Hombres",
             "tipo": "Abrigos",
             "descripcion": "Chaqueta bomber estilo aviador con puños y bajo elástico. Cierre frontal de cremallera y dos bolsillos con solapa. Tejido exterior resistente al viento.",
-            "image": "https://picsum.photos/seed/bomber-hombre/600/600",
+            "image": "/images/10.jpg",
             "precio": 130
         },
         {
@@ -96,7 +96,7 @@
             "categoria": "Mujeres",
             "tipo": "Calzado",
             "descripcion": "Sandalias planas con tiras cruzadas y hebilla ajustable al tobillo. Plantilla acolchada y suela flexible. Perfectas para el día a día en climas cálidos.",
-            "image": "https://picsum.photos/seed/sandalias-mujer/600/600",
+            "image": "/images/11.jpg",
             "precio": 45
         },
         {
@@ -105,7 +105,7 @@
             "categoria": "Niños",
             "tipo": "Ropa interior",
             "descripcion": "Pijama de manga larga y pantalón largo en algodón orgánico. Estampado de estrellas en tonos pastel. Puños elásticos suaves que no marcan la piel.",
-            "image": "https://picsum.photos/seed/pijama-nina/600/600",
+            "image": "/images/12.jpg",
             "precio": 30
         },
         {
@@ -114,7 +114,7 @@
             "categoria": "Hombres",
             "tipo": "Abrigos",
             "descripcion": "Trench de corte recto con cinturón a la cintura y solapa amplia. Tejido de gabardina tratado contra la lluvia ligera. Forro interior estampado a cuadros.",
-            "image": "https://picsum.photos/seed/trench-hombre/600/600",
+            "image": "/images/13.jpg",
             "precio": 195
         },
         {
@@ -123,7 +123,7 @@
             "categoria": "Hombres",
             "tipo": "Abrigos",
             "descripcion": "Plumífero con relleno de plumón de pato y exterior nylon repelente al agua. Empaquetable en su propia bolsa para llevar en la mochila.",
-            "image": "https://picsum.photos/seed/plumifero-hombre/600/600",
+            "image": "/images/14.jpg",
             "precio": 160
         },
         {
@@ -132,7 +132,7 @@
             "categoria": "Hombres",
             "tipo": "Abrigos",
             "descripcion": "Chaquetón estilo caban de lana prensada con doble botonadura metálica. Bolsillos laterales verticales y largo hasta la cadera.",
-            "image": "https://picsum.photos/seed/caban-hombre/600/600",
+            "image": "/images/15.jpg",
             "precio": 230
         },
         {
@@ -141,7 +141,7 @@
             "categoria": "Hombres",
             "tipo": "Abrigos",
             "descripcion": "Parka larga con capucha desmontable y borde de pelo sintético. Cierre de cremallera con botones a presión y bolsillos térmicos en el pecho.",
-            "image": "https://picsum.photos/seed/parka-hombre/600/600",
+            "image": "/images/16.jpg",
             "precio": 260
         },
         {
@@ -150,7 +150,7 @@
             "categoria": "Hombres",
             "tipo": "Ropa interior",
             "descripcion": "Pack de cinco slips en algodón con un toque de elastano. Cintura elástica suave sin logos visibles. Tejido transpirable para uso diario.",
-            "image": "https://picsum.photos/seed/slip-hombre/600/600",
+            "image": "/images/17.jpg",
             "precio": 28
         },
         {
@@ -159,7 +159,7 @@
             "categoria": "Hombres",
             "tipo": "Ropa interior",
             "descripcion": "Camiseta térmica de manga larga en microfibra. Conserva el calor corporal sin volumen bajo camisas o jerséis.",
-            "image": "https://picsum.photos/seed/termica-hombre/600/600",
+            "image": "/images/18.jpg",
             "precio": 32
         },
         {
@@ -168,7 +168,7 @@
             "categoria": "Hombres",
             "tipo": "Ropa interior",
             "descripcion": "Seis pares de calcetines deportivos con refuerzo en talón y puntera. Tejido de rizo amortiguador. Color blanco con detalles grises.",
-            "image": "https://picsum.photos/seed/calcetines-hombre/600/600",
+            "image": "/images/19.jpg",
             "precio": 22
         },
         {
@@ -177,7 +177,7 @@
             "categoria": "Hombres",
             "tipo": "Ropa interior",
             "descripcion": "Bóxer sin costuras laterales confeccionado en modal y elastano. Cintura ancha con logo grabado en relieve. Ajuste segunda piel.",
-            "image": "https://picsum.photos/seed/boxer-premium-hombre/600/600",
+            "image": "/images/20.jpg",
             "precio": 18
         },
         {
@@ -186,7 +186,7 @@
             "categoria": "Hombres",
             "tipo": "Calzado",
             "descripcion": "Zapatos Oxford de cuero pulido en color marrón. Suela de cuero y cosido Goodyear. Ideales para trajes y ocasiones formales.",
-            "image": "https://picsum.photos/seed/oxford-hombre/600/600",
+            "image": "/images/21.jpg",
             "precio": 175
         },
         {
@@ -195,7 +195,7 @@
             "categoria": "Hombres",
             "tipo": "Calzado",
             "descripcion": "Botas chelsea con elásticos laterales y tirador trasero. Cuero flexible de primera calidad. Diseño atemporal que combina con vaqueros y pantalones de vestir.",
-            "image": "https://picsum.photos/seed/chelsea-hombre/600/600",
+            "image": "/images/22.jpg",
             "precio": 145
         },
         {
@@ -204,7 +204,7 @@
             "categoria": "Hombres",
             "tipo": "Calzado",
             "descripcion": "Zapatillas de running con parte superior de malla transpirable y suela de espuma amortiguada. Ligeras y pensadas para uso diario o entrenamiento suave.",
-            "image": "https://picsum.photos/seed/runners-hombre/600/600",
+            "image": "/images/23.jpg",
             "precio": 95
         },
         {
@@ -213,7 +213,7 @@
             "categoria": "Hombres",
             "tipo": "Calzado",
             "descripcion": "Mocasines clásicos en piel napa suave con detalle de borla. Suela flexible de goma antideslizante. Acabado artesanal.",
-            "image": "https://picsum.photos/seed/mocasines-hombre/600/600",
+            "image": "/images/24.jpg",
             "precio": 130
         },
         {
@@ -222,7 +222,7 @@
             "categoria": "Hombres",
             "tipo": "Calzado",
             "descripcion": "Botas trekking con membrana impermeable y suela Vibram. Caña media con acolchado en el cuello. Preparadas para rutas exigentes.",
-            "image": "https://picsum.photos/seed/trekking-hombre/600/600",
+            "image": "/images/25.jpg",
             "precio": 165
         },
         {
@@ -231,7 +231,7 @@
             "categoria": "Mujeres",
             "tipo": "Abrigos",
             "descripcion": "Abrigo largo de paño con cinturón a la cintura y cuello amplio. Corte oversize moderno. Dos bolsillos de parche al frente.",
-            "image": "https://picsum.photos/seed/pano-mujer/600/600",
+            "image": "/images/26.jpg",
             "precio": 210
         },
         {
@@ -240,7 +240,7 @@
             "categoria": "Mujeres",
             "tipo": "Abrigos",
             "descripcion": "Plumífero corto con acabado mate y capucha. Cierre de cremallera frontal y puños elásticos. Ligero y muy cálido.",
-            "image": "https://picsum.photos/seed/plumifero-mujer/600/600",
+            "image": "/images/27.jpg",
             "precio": 155
         },
         {
@@ -249,7 +249,7 @@
             "categoria": "Mujeres",
             "tipo": "Abrigos",
             "descripcion": "Chaqueta estilo biker en cuero sintético con cremallera al bies. Solapas amplias y herrajes metálicos. Corte entallado.",
-            "image": "https://picsum.photos/seed/biker-mujer/600/600",
+            "image": "/images/28.jpg",
             "precio": 135
         },
         {
@@ -258,7 +258,7 @@
             "categoria": "Mujeres",
             "tipo": "Abrigos",
             "descripcion": "Capa de lana virgen con aberturas laterales para los brazos. Largo midi y acabado de flecos. Estilo bohemio elegante.",
-            "image": "https://picsum.photos/seed/capa-mujer/600/600",
+            "image": "/images/29.jpg",
             "precio": 185
         },
         {
@@ -267,7 +267,7 @@
             "categoria": "Mujeres",
             "tipo": "Abrigos",
             "descripcion": "Abrigo teddy de pelo sintético suave en color crudo. Corte recto holgado y cierre de botones a presión ocultos. Muy cálido.",
-            "image": "https://picsum.photos/seed/teddy-mujer/600/600",
+            "image": "/images/30.jpg",
             "precio": 175
         },
         {
@@ -276,7 +276,7 @@
             "categoria": "Mujeres",
             "tipo": "Ropa interior",
             "descripcion": "Sujetador push-up con copas moldeadas y aros de acero. Tirantes regulables y cierre trasero de tres broches. Disponible en tonos nude.",
-            "image": "https://picsum.photos/seed/pushup-mujer/600/600",
+            "image": "/images/31.jpg",
             "precio": 38
         },
         {
@@ -285,7 +285,7 @@
             "categoria": "Mujeres",
             "tipo": "Ropa interior",
             "descripcion": "Pack de tres braguitas tipo culotte en algodón elástico. Corte alto a la cadera sin marcas. Tejido suave de uso diario.",
-            "image": "https://picsum.photos/seed/culotte-mujer/600/600",
+            "image": "/images/32.jpg",
             "precio": 24
         },
         {
@@ -294,7 +294,7 @@
             "categoria": "Mujeres",
             "tipo": "Ropa interior",
             "descripcion": "Camisón largo en satén con tirantes finos regulables y detalle de encaje en el pecho. Corte evasé con caída fluida.",
-            "image": "https://picsum.photos/seed/camison-mujer/600/600",
+            "image": "/images/33.jpg",
             "precio": 48
         },
         {
@@ -303,7 +303,7 @@
             "categoria": "Mujeres",
             "tipo": "Ropa interior",
             "descripcion": "Pack de cuatro medias de tul 20 denier con banda antidesliz. Color natural. Tejido reforzado en la punta para mayor durabilidad.",
-            "image": "https://picsum.photos/seed/medias-mujer/600/600",
+            "image": "/images/34.jpg",
             "precio": 20
         },
         {
@@ -312,7 +312,7 @@
             "categoria": "Mujeres",
             "tipo": "Calzado",
             "descripcion": "Zapato stiletto en charol con tacón fino de 9 cm. Plantilla acolchada para mayor comodidad. Imprescindible en looks de noche.",
-            "image": "https://picsum.photos/seed/stiletto-mujer/600/600",
+            "image": "/images/35.jpg",
             "precio": 110
         },
         {
@@ -321,7 +321,7 @@
             "categoria": "Mujeres",
             "tipo": "Calzado",
             "descripcion": "Bailarinas planas en piel suave con lazada delantera. Suela flexible y puntera redondeada. Ideales para el día a día.",
-            "image": "https://picsum.photos/seed/bailarinas-mujer/600/600",
+            "image": "/images/36.jpg",
             "precio": 65
         },
         {
@@ -330,7 +330,7 @@
             "categoria": "Mujeres",
             "tipo": "Calzado",
             "descripcion": "Botas de caña alta hasta la rodilla en cuero sintético. Tacón cuadrado de 4 cm y cremallera interior. Combinables con faldas o pantalones ajustados.",
-            "image": "https://picsum.photos/seed/botas-altas-mujer/600/600",
+            "image": "/images/37.jpg",
             "precio": 140
         },
         {
@@ -339,7 +339,7 @@
             "categoria": "Mujeres",
             "tipo": "Calzado",
             "descripcion": "Zapatillas con suela de plataforma de 4 cm y cordones gruesos. Upper de piel sintética en blanco roto con detalles laterales.",
-            "image": "https://picsum.photos/seed/plataforma-mujer/600/600",
+            "image": "/images/38.jpg",
             "precio": 85
         },
         {
@@ -348,7 +348,7 @@
             "categoria": "Niños",
             "tipo": "Abrigos",
             "descripcion": "Abrigo de forro polar con capucha y bolsillos canguro. Cierre de cremallera con protector de mentón. Cálido y fácil de lavar.",
-            "image": "https://picsum.photos/seed/polar-nino/600/600",
+            "image": "/images/39.jpg",
             "precio": 55
         },
         {
@@ -357,7 +357,7 @@
             "categoria": "Niños",
             "tipo": "Abrigos",
             "descripcion": "Plumífero con estampado multicolor divertido y capucha fija. Bolsillos laterales con cremallera. Ligero y muy cálido.",
-            "image": "https://picsum.photos/seed/plumifero-nino/600/600",
+            "image": "/images/40.jpg",
             "precio": 85
         },
         {
@@ -366,7 +366,7 @@
             "categoria": "Niños",
             "tipo": "Abrigos",
             "descripcion": "Chubasquero impermeable con capucha y cierre de botones a presión. Estampado de corazones en fondo amarillo. Perfecto para días de lluvia.",
-            "image": "https://picsum.photos/seed/chubasquero-nina/600/600",
+            "image": "/images/41.jpg",
             "precio": 42
         },
         {
@@ -375,7 +375,7 @@
             "categoria": "Niños",
             "tipo": "Abrigos",
             "descripcion": "Trenca de paño con cierre de toggles de madera y capucha forrada. Largo hasta la cadera con dos bolsillos de parche.",
-            "image": "https://picsum.photos/seed/trenca-nino/600/600",
+            "image": "/images/42.jpg",
             "precio": 90
         },
         {
@@ -384,7 +384,7 @@
             "categoria": "Niños",
             "tipo": "Ropa interior",
             "descripcion": "Pack de cinco bodies de manga corta en algodón 100%. Broches en la entrepierna y escote americano para cambios rápidos.",
-            "image": "https://picsum.photos/seed/bodies-bebe/600/600",
+            "image": "/images/43.jpg",
             "precio": 25
         },
         {
@@ -393,7 +393,7 @@
             "categoria": "Niños",
             "tipo": "Ropa interior",
             "descripcion": "Pack semanal de calzoncillos slip en algodón con estampados infantiles. Cintura elástica suave sin goma apretada.",
-            "image": "https://picsum.photos/seed/slip-nino/600/600",
+            "image": "/images/44.jpg",
             "precio": 18
         },
         {
@@ -402,7 +402,7 @@
             "categoria": "Niños",
             "tipo": "Ropa interior",
             "descripcion": "Pack de siete braguitas de algodón con estampados de unicornios y flores. Costuras planas para máxima comodidad.",
-            "image": "https://picsum.photos/seed/braguitas-nina/600/600",
+            "image": "/images/45.jpg",
             "precio": 16
         },
         {
@@ -411,7 +411,7 @@
             "categoria": "Niños",
             "tipo": "Ropa interior",
             "descripcion": "Diez pares de calcetines cortos de colores variados. Algodón suave con puño elástico bajo. Para el día a día en el cole.",
-            "image": "https://picsum.photos/seed/calcetines-nino/600/600",
+            "image": "/images/46.jpg",
             "precio": 15
         },
         {
@@ -420,7 +420,7 @@
             "categoria": "Niños",
             "tipo": "Calzado",
             "descripcion": "Botas de agua de caucho con forro interior cálido. Diseño con orejas de animalito en la puntera. Suela antideslizante.",
-            "image": "https://picsum.photos/seed/botas-agua-nino/600/600",
+            "image": "/images/47.jpg",
             "precio": 40
         },
         {
@@ -429,7 +429,7 @@
             "categoria": "Niños",
             "tipo": "Calzado",
             "descripcion": "Zapatillas con luces LED en la suela que se encienden al caminar. Cierre de velcro para poner y quitar sin ayuda. Carga USB incluida.",
-            "image": "https://picsum.photos/seed/led-nino/600/600",
+            "image": "/images/48.jpg",
             "precio": 58
         },
         {
@@ -438,7 +438,7 @@
             "categoria": "Niños",
             "tipo": "Calzado",
             "descripcion": "Sandalias cerradas de caucho perforado, perfectas para la playa y la piscina. Tira trasera ajustable y suela flexible.",
-            "image": "https://picsum.photos/seed/cangrejeras-nino/600/600",
+            "image": "/images/49.jpg",
             "precio": 25
         },
         {
@@ -447,7 +447,7 @@
             "categoria": "Niños",
             "tipo": "Calzado",
             "descripcion": "Merceditas clásicas en piel con tira al empeine y hebilla metálica. Suela cosida y plantilla acolchada. Ideales para uniforme o celebraciones.",
-            "image": "https://picsum.photos/seed/merceditas-nina/600/600",
+            "image": "/images/50.jpg",
             "precio": 48
         }
     ]
