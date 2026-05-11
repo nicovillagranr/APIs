@@ -3,7 +3,15 @@
     "name": "Nico Villagrán",
     "email": "nicovillagranroses@gmail.com",
     "github": "https://github.com/nicovillagranr",
-    "linkedin": "https://www.linkedin.com/in/nico-villagran/"
+    "linkedin": "https://www.linkedin.com/in/nico-villagran/",
+    "role": "Frontend Developer",
+    "based": "Santiago, CL",
+    "years": 2,
+    "stack": {
+      "frontend": ["React", "Next.js", "TypeScript", "JavaScript"],
+      "styling": ["Tailwind", "Bootstrap", "CSS Modules", "BEM", "UX"],
+      "tools": ["Git", "Docker"]
+    }
   },
   "projects": [
     { "id": 0, "name": "Portfolio Projects API", "path": "https://00-portfolio-projects-api.vercel.app/projects", "image": null, "description": "API REST que sirve los proyectos de mi portfolio con datos estructurados (nombre, descripción, tecnologías, links, estado).", "stack": ["Node.js", "json-server"], "type": "REST API", "status": "online", "framework": "APIs", "deploy": "Vercel", "repo": "https://github.com/nicovillagranr/APIs/tree/main/00-portfolio-projects" },
