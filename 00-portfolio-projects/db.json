@@ -1,4 +1,10 @@
 {
+  "profile": {
+    "name": "Nico Villagrán",
+    "email": "nicovillagranroses@gmail.com",
+    "github": "https://github.com/nicovillagranr",
+    "linkedin": "https://www.linkedin.com/in/nico-villagran/"
+  },
   "projects": [
     { "id": 0, "name": "Portfolio Projects API", "path": "https://00-portfolio-projects-api.vercel.app/projects", "image": null, "description": "API REST que sirve los proyectos de mi portfolio con datos estructurados (nombre, descripción, tecnologías, links, estado).", "stack": ["Node.js", "json-server"], "type": "REST API", "status": "online", "framework": "APIs", "deploy": "Vercel", "repo": "https://github.com/nicovillagranr/APIs/tree/main/00-portfolio-projects" },
     { "id": 1, "name": "Glossy Touch", "path": "/proyecto-1/", "image": "https://00-portfolio-projects-api.vercel.app/images/proyecto-1.webp", "description": "Landing de práctica para consolidar layout CSS con componentes React. Estructura modular por bloques (Header, Main, Card, Footer) y hojas de estilo desacopladas.", "stack": ["Vite", "npm", "React 19", "CSS modular"], "type": "Landing", "status": "online", "framework": "React", "deploy": "Hostinger", "repo": "https://github.com/nicovillagranr/web-development/tree/master/08-projects/01-react/proyecto-1" },
