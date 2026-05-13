@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="REST API que sirve los proyectos y el perfil del portfolio de Nico Villagrán. Endpoints públicos: /projects y /profile." />
+<meta name="description" content="REST API con 50 productos de moda (hombres, mujeres, niños). Cada producto expone nombre, categoría, tipo, descripción, imagen y precio." />
 <meta name="theme-color" content="#1e1b4b" />
 <meta name="robots" content="index, follow" />
-<title>Portfolio Projects API · Nico Villagrán</title>
+<title>Products API · Nico Villagrán</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -272,8 +272,8 @@
 
   <header>
     <span class="brand"><span class="dot" aria-hidden="true"></span>REST API · online</span>
-    <h1>Portfolio Projects <span class="accent">API</span></h1>
-    <p class="tagline">REST API que sirve los proyectos y el perfil del portfolio de Nico Villagrán. Datos estructurados, CORS abierto, listos para consumir desde cualquier frontend.</p>
+    <h1>Products <span class="accent">API</span></h1>
+    <p class="tagline">REST API con 50 productos de moda para hombres, mujeres y niños. Cada producto expone nombre, categoría, tipo, descripción, imagen y precio — lista para consumir y filtrar en cualquier proyecto e-commerce.</p>
     <div class="meta">
       <span class="chip">Node.js</span>
       <span class="chip">json-server</span>
@@ -287,59 +287,29 @@
       <div class="endpoint-head">
         <span class="endpoint-path">
           <span class="method">GET</span>
-          <span class="path">/projects</span>
+          <span class="path">/products</span>
         </span>
-        <a class="endpoint-link" href="/projects" target="_blank" rel="noopener">Ver respuesta →</a>
+        <a class="endpoint-link" href="/products" target="_blank" rel="noopener">Ver respuesta →</a>
       </div>
-      <p class="endpoint-desc">Devuelve el array completo de proyectos del portfolio: nombre, descripción, stack, tipo, estado, imagen y link al repo.</p>
+      <p class="endpoint-desc">Devuelve el array completo de productos (50 items). Soporta filtros nativos de json-server: <code>?categoria=Hombres</code>, <code>?tipo=Calzado</code>, <code>?_sort=precio&amp;_order=asc</code>.</p>
 <pre><code><span class="tk-punct">[</span>
   <span class="tk-punct">{</span>
-    <span class="tk-key">"id"</span><span class="tk-punct">:</span> <span class="tk-num">3</span><span class="tk-punct">,</span>
-    <span class="tk-key">"name"</span><span class="tk-punct">:</span> <span class="tk-str">"NexusAI"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"path"</span><span class="tk-punct">:</span> <span class="tk-str">"/proyecto-3/"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"image"</span><span class="tk-punct">:</span> <span class="tk-str">"https://.../images/proyecto-3.webp"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"description"</span><span class="tk-punct">:</span> <span class="tk-str">"Landing de agencia IA con animaciones Framer Motion..."</span><span class="tk-punct">,</span>
-    <span class="tk-key">"stack"</span><span class="tk-punct">:</span> <span class="tk-punct">[</span><span class="tk-str">"React 19"</span><span class="tk-punct">,</span> <span class="tk-str">"Tailwind v4"</span><span class="tk-punct">,</span> <span class="tk-str">"Framer Motion"</span><span class="tk-punct">],</span>
-    <span class="tk-key">"type"</span><span class="tk-punct">:</span> <span class="tk-str">"Landing"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"status"</span><span class="tk-punct">:</span> <span class="tk-str">"online"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"framework"</span><span class="tk-punct">:</span> <span class="tk-str">"React"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"deploy"</span><span class="tk-punct">:</span> <span class="tk-str">"Hostinger"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"repo"</span><span class="tk-punct">:</span> <span class="tk-str">"https://github.com/nicovillagranr/..."</span>
+    <span class="tk-key">"id"</span><span class="tk-punct">:</span> <span class="tk-num">1</span><span class="tk-punct">,</span>
+    <span class="tk-key">"nombre"</span><span class="tk-punct">:</span> <span class="tk-str">"Calzado caballero tipo tenis"</span><span class="tk-punct">,</span>
+    <span class="tk-key">"categoria"</span><span class="tk-punct">:</span> <span class="tk-str">"Hombres"</span><span class="tk-punct">,</span>
+    <span class="tk-key">"tipo"</span><span class="tk-punct">:</span> <span class="tk-str">"Calzado"</span><span class="tk-punct">,</span>
+    <span class="tk-key">"descripcion"</span><span class="tk-punct">:</span> <span class="tk-str">"Calzado para caballero marca Lugo Conti..."</span><span class="tk-punct">,</span>
+    <span class="tk-key">"image"</span><span class="tk-punct">:</span> <span class="tk-str">"/images/1.jpg"</span><span class="tk-punct">,</span>
+    <span class="tk-key">"precio"</span><span class="tk-punct">:</span> <span class="tk-num">29990</span>
   <span class="tk-punct">},</span>
   <span class="tk-punct">...</span>
 <span class="tk-punct">]</span></code></pre>
     </article>
 
-    <article class="endpoint">
-      <div class="endpoint-head">
-        <span class="endpoint-path">
-          <span class="method">GET</span>
-          <span class="path">/profile</span>
-        </span>
-        <a class="endpoint-link" href="/profile" target="_blank" rel="noopener">Ver respuesta →</a>
-      </div>
-      <p class="endpoint-desc">Devuelve el perfil del desarrollador: nombre, contacto, rol, ubicación, años de experiencia, disponibilidad y stack agrupado.</p>
-<pre><code><span class="tk-punct">{</span>
-  <span class="tk-key">"name"</span><span class="tk-punct">:</span> <span class="tk-str">"Nico Villagrán"</span><span class="tk-punct">,</span>
-  <span class="tk-key">"email"</span><span class="tk-punct">:</span> <span class="tk-str">"nicovillagranroses@gmail.com"</span><span class="tk-punct">,</span>
-  <span class="tk-key">"github"</span><span class="tk-punct">:</span> <span class="tk-str">"https://github.com/nicovillagranr"</span><span class="tk-punct">,</span>
-  <span class="tk-key">"linkedin"</span><span class="tk-punct">:</span> <span class="tk-str">"https://www.linkedin.com/in/nico-villagran/"</span><span class="tk-punct">,</span>
-  <span class="tk-key">"role"</span><span class="tk-punct">:</span> <span class="tk-str">"Frontend Developer"</span><span class="tk-punct">,</span>
-  <span class="tk-key">"based"</span><span class="tk-punct">:</span> <span class="tk-str">"Santiago, CL"</span><span class="tk-punct">,</span>
-  <span class="tk-key">"years"</span><span class="tk-punct">:</span> <span class="tk-num">2</span><span class="tk-punct">,</span>
-  <span class="tk-key">"availability"</span><span class="tk-punct">:</span> <span class="tk-str">"open_to_work"</span><span class="tk-punct">,</span>
-  <span class="tk-key">"stack"</span><span class="tk-punct">:</span> <span class="tk-punct">{</span>
-    <span class="tk-key">"frontend"</span><span class="tk-punct">:</span> <span class="tk-punct">[</span><span class="tk-str">"React"</span><span class="tk-punct">,</span> <span class="tk-str">"Next.js"</span><span class="tk-punct">,</span> <span class="tk-str">"TypeScript"</span><span class="tk-punct">],</span>
-    <span class="tk-key">"styling"</span><span class="tk-punct">:</span> <span class="tk-punct">[</span><span class="tk-str">"Tailwind"</span><span class="tk-punct">,</span> <span class="tk-str">"CSS Modules"</span><span class="tk-punct">,</span> <span class="tk-str">"BEM"</span><span class="tk-punct">],</span>
-    <span class="tk-key">"tools"</span><span class="tk-punct">:</span> <span class="tk-punct">[</span><span class="tk-str">"Git"</span><span class="tk-punct">,</span> <span class="tk-str">"Docker"</span><span class="tk-punct">]</span>
-  <span class="tk-punct">}</span>
-<span class="tk-punct">}</span></code></pre>
-    </article>
-
   </section>
 
   <div class="cta">
-    <a class="btn btn-primary" href="https://github.com/nicovillagranr/APIs/tree/main/00-portfolio-projects" target="_blank" rel="noopener">Ver código en GitHub</a>
+    <a class="btn btn-primary" href="https://github.com/nicovillagranr/APIs/tree/main/01-products-api" target="_blank" rel="noopener">Ver código en GitHub</a>
     <a class="btn btn-ghost" href="https://nicovillagran.com" target="_blank" rel="noopener">Visitar el portfolio</a>
   </div>
 
