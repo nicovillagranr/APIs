@@ -5,7 +5,7 @@
         }
     },
     "rewrites":[
-        {"source": "/((?!images/).*)" , "destination": "/api/index.js"}
+        {"source": "/((?!images/).+)" , "destination": "/api/index.js"}
     ],
     "headers": [
         {
