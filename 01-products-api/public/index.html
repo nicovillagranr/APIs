@@ -30,6 +30,7 @@
 
   *, *::before, *::after { box-sizing: border-box; }
   html { scrollbar-color: var(--line) transparent; scrollbar-width: thin; }
+  html, body { overflow-x: hidden; }
   body {
     margin: 0;
     min-height: 100vh;
@@ -118,6 +119,7 @@
     border: 1px solid transparent;
     border-left: 2px solid transparent;
     padding: 20px;
+    min-width: 0;
     transition: border-color 0.15s ease, background 0.15s ease;
   }
   .endpoint:hover,
