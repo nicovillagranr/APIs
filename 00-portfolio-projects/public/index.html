@@ -285,22 +285,7 @@
         <a class="endpoint-link" href="/projects" target="_blank" rel="noopener">Ver respuesta →</a>
       </div>
       <p class="endpoint-desc">Devuelve el array completo de proyectos del portfolio: nombre, descripción, stack, tipo, estado, imagen y link al repo.</p>
-<pre><code><span class="tk-punct">[</span>
-  <span class="tk-punct">{</span>
-    <span class="tk-key">"id"</span><span class="tk-punct">:</span> <span class="tk-num">3</span><span class="tk-punct">,</span>
-    <span class="tk-key">"name"</span><span class="tk-punct">:</span> <span class="tk-str">"NexusAI"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"path"</span><span class="tk-punct">:</span> <span class="tk-str">"/proyecto-3/"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"image"</span><span class="tk-punct">:</span> <span class="tk-str">"https://.../images/proyecto-3.webp"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"description"</span><span class="tk-punct">:</span> <span class="tk-str">"Landing de agencia IA con animaciones Framer Motion..."</span><span class="tk-punct">,</span>
-    <span class="tk-key">"stack"</span><span class="tk-punct">:</span> <span class="tk-punct">[</span><span class="tk-str">"React 19"</span><span class="tk-punct">,</span> <span class="tk-str">"Tailwind v4"</span><span class="tk-punct">,</span> <span class="tk-str">"Framer Motion"</span><span class="tk-punct">],</span>
-    <span class="tk-key">"type"</span><span class="tk-punct">:</span> <span class="tk-str">"Landing"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"status"</span><span class="tk-punct">:</span> <span class="tk-str">"online"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"framework"</span><span class="tk-punct">:</span> <span class="tk-str">"React"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"deploy"</span><span class="tk-punct">:</span> <span class="tk-str">"Hostinger"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"repo"</span><span class="tk-punct">:</span> <span class="tk-str">"https://github.com/nicovillagranr/..."</span>
-  <span class="tk-punct">},</span>
-  <span class="tk-punct">...</span>
-<span class="tk-punct">]</span></code></pre>
+<pre data-endpoint="/projects"><code>Cargando…</code></pre>
     </article>
 
     <article class="endpoint">
@@ -312,21 +297,7 @@
         <a class="endpoint-link" href="/profile" target="_blank" rel="noopener">Ver respuesta →</a>
       </div>
       <p class="endpoint-desc">Devuelve el perfil del desarrollador: nombre, contacto, rol, ubicación, años de experiencia, disponibilidad y stack agrupado.</p>
-<pre><code><span class="tk-punct">{</span>
-  <span class="tk-key">"name"</span><span class="tk-punct">:</span> <span class="tk-str">"Nico Villagrán"</span><span class="tk-punct">,</span>
-  <span class="tk-key">"email"</span><span class="tk-punct">:</span> <span class="tk-str">"nicovillagranroses@gmail.com"</span><span class="tk-punct">,</span>
-  <span class="tk-key">"github"</span><span class="tk-punct">:</span> <span class="tk-str">"https://github.com/nicovillagranr"</span><span class="tk-punct">,</span>
-  <span class="tk-key">"linkedin"</span><span class="tk-punct">:</span> <span class="tk-str">"https://www.linkedin.com/in/nico-villagran/"</span><span class="tk-punct">,</span>
-  <span class="tk-key">"role"</span><span class="tk-punct">:</span> <span class="tk-str">"Frontend Developer"</span><span class="tk-punct">,</span>
-  <span class="tk-key">"based"</span><span class="tk-punct">:</span> <span class="tk-str">"Santiago, CL"</span><span class="tk-punct">,</span>
-  <span class="tk-key">"years"</span><span class="tk-punct">:</span> <span class="tk-num">2</span><span class="tk-punct">,</span>
-  <span class="tk-key">"availability"</span><span class="tk-punct">:</span> <span class="tk-str">"open_to_work"</span><span class="tk-punct">,</span>
-  <span class="tk-key">"stack"</span><span class="tk-punct">:</span> <span class="tk-punct">{</span>
-    <span class="tk-key">"frontend"</span><span class="tk-punct">:</span> <span class="tk-punct">[</span><span class="tk-str">"React"</span><span class="tk-punct">,</span> <span class="tk-str">"Next.js"</span><span class="tk-punct">,</span> <span class="tk-str">"TypeScript"</span><span class="tk-punct">],</span>
-    <span class="tk-key">"styling"</span><span class="tk-punct">:</span> <span class="tk-punct">[</span><span class="tk-str">"Tailwind"</span><span class="tk-punct">,</span> <span class="tk-str">"CSS Modules"</span><span class="tk-punct">,</span> <span class="tk-str">"BEM"</span><span class="tk-punct">],</span>
-    <span class="tk-key">"tools"</span><span class="tk-punct">:</span> <span class="tk-punct">[</span><span class="tk-str">"Git"</span><span class="tk-punct">,</span> <span class="tk-str">"Docker"</span><span class="tk-punct">]</span>
-  <span class="tk-punct">}</span>
-<span class="tk-punct">}</span></code></pre>
+<pre data-endpoint="/profile"><code>Cargando…</code></pre>
     </article>
 
   </section>
@@ -341,5 +312,34 @@
   </footer>
 
 </main>
+<script>
+  (function () {
+    function escapeHtml(s) {
+      return s.replace(/[&<>]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c]; });
+    }
+    function highlight(json) {
+      return escapeHtml(json)
+        .replace(
+          /("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g,
+          function (match) {
+            var cls = 'tk-num';
+            if (/^"/.test(match)) cls = /:$/.test(match) ? 'tk-key' : 'tk-str';
+            return '<span class="' + cls + '">' + match + '</span>';
+          }
+        )
+        .replace(/([{}\[\],])/g, '<span class="tk-punct">$1</span>');
+    }
+    document.querySelectorAll('pre[data-endpoint]').forEach(function (pre) {
+      fetch(pre.dataset.endpoint)
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          pre.innerHTML = '<code>' + highlight(JSON.stringify(data, null, 2)) + '</code>';
+        })
+        .catch(function () {
+          pre.textContent = 'Error cargando ' + pre.dataset.endpoint;
+        });
+    });
+  })();
+</script>
 </body>
 </html>

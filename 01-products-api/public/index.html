@@ -285,18 +285,7 @@
         <a class="endpoint-link" href="/products" target="_blank" rel="noopener">Ver respuesta →</a>
       </div>
       <p class="endpoint-desc">Devuelve el array completo de productos (50 items). Soporta filtros nativos de json-server: <code>?categoria=Hombres</code>, <code>?tipo=Calzado</code>, <code>?_sort=precio&amp;_order=asc</code>.</p>
-<pre><code><span class="tk-punct">[</span>
-  <span class="tk-punct">{</span>
-    <span class="tk-key">"id"</span><span class="tk-punct">:</span> <span class="tk-num">1</span><span class="tk-punct">,</span>
-    <span class="tk-key">"nombre"</span><span class="tk-punct">:</span> <span class="tk-str">"Calzado caballero tipo tenis"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"categoria"</span><span class="tk-punct">:</span> <span class="tk-str">"Hombres"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"tipo"</span><span class="tk-punct">:</span> <span class="tk-str">"Calzado"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"descripcion"</span><span class="tk-punct">:</span> <span class="tk-str">"Calzado para caballero marca Lugo Conti..."</span><span class="tk-punct">,</span>
-    <span class="tk-key">"image"</span><span class="tk-punct">:</span> <span class="tk-str">"/images/1.jpg"</span><span class="tk-punct">,</span>
-    <span class="tk-key">"precio"</span><span class="tk-punct">:</span> <span class="tk-num">29990</span>
-  <span class="tk-punct">},</span>
-  <span class="tk-punct">...</span>
-<span class="tk-punct">]</span></code></pre>
+<pre data-endpoint="/products"><code>Cargando…</code></pre>
     </article>
 
   </section>
@@ -311,5 +300,34 @@
   </footer>
 
 </main>
+<script>
+  (function () {
+    function escapeHtml(s) {
+      return s.replace(/[&<>]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c]; });
+    }
+    function highlight(json) {
+      return escapeHtml(json)
+        .replace(
+          /("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g,
+          function (match) {
+            var cls = 'tk-num';
+            if (/^"/.test(match)) cls = /:$/.test(match) ? 'tk-key' : 'tk-str';
+            return '<span class="' + cls + '">' + match + '</span>';
+          }
+        )
+        .replace(/([{}\[\],])/g, '<span class="tk-punct">$1</span>');
+    }
+    document.querySelectorAll('pre[data-endpoint]').forEach(function (pre) {
+      fetch(pre.dataset.endpoint)
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          pre.innerHTML = '<code>' + highlight(JSON.stringify(data, null, 2)) + '</code>';
+        })
+        .catch(function () {
+          pre.textContent = 'Error cargando ' + pre.dataset.endpoint;
+        });
+    });
+  })();
+</script>
 </body>
 </html>
