@@ -182,18 +182,6 @@
     color: var(--text);
   }
   pre code { color: inherit; background: none; padding: 0; }
-  .endpoint-more {
-    margin: 10px 0 0;
-    font-family: "IBM Plex Mono", ui-monospace, monospace;
-    font-size: 0.75rem;
-    color: var(--text-dim);
-  }
-  .endpoint-more a {
-    color: var(--accent);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-  }
-  .endpoint-more a:hover { border-bottom-color: var(--accent); }
   .tk-key { color: #82cfff; }     /* blue 30 */
   .tk-str { color: var(--success); }
   .tk-num { color: #be95ff; }     /* purple 40 */
@@ -297,7 +285,53 @@
         <a class="endpoint-link" href="/products" target="_blank" rel="noopener">Ver respuesta →</a>
       </div>
       <p class="endpoint-desc">Devuelve el array completo de productos (50 items). Soporta filtros nativos de json-server: <code>?categoria=Hombres</code>, <code>?tipo=Calzado</code>, <code>?_sort=precio&amp;_order=asc</code>.</p>
-<pre data-endpoint="/products"><code>Cargando…</code></pre>
+<pre><code>[
+  {
+    <span class="tk-key">"id"</span>: <span class="tk-num">1</span>,
+    <span class="tk-key">"nombre"</span>: <span class="tk-str">"Calzado caballero tipo tenis"</span>,
+    <span class="tk-key">"categoria"</span>: <span class="tk-str">"Hombres"</span>,
+    <span class="tk-key">"tipo"</span>: <span class="tk-str">"Calzado"</span>,
+    <span class="tk-key">"descripcion"</span>: <span class="tk-str">"Calzado para caballero marca Lugo Conti..."</span>,
+    <span class="tk-key">"image"</span>: <span class="tk-str">"/images/1.jpg"</span>,
+    <span class="tk-key">"precio"</span>: <span class="tk-num">29990</span>
+  },
+  {
+    <span class="tk-key">"id"</span>: <span class="tk-num">2</span>,
+    <span class="tk-key">"nombre"</span>: <span class="tk-str">"Abrigo largo de lana"</span>,
+    <span class="tk-key">"categoria"</span>: <span class="tk-str">"Hombres"</span>,
+    <span class="tk-key">"tipo"</span>: <span class="tk-str">"Abrigos"</span>,
+    <span class="tk-key">"descripcion"</span>: <span class="tk-str">"Abrigo largo confeccionado en lana virgen..."</span>,
+    <span class="tk-key">"image"</span>: <span class="tk-str">"/images/2.jpg"</span>,
+    <span class="tk-key">"precio"</span>: <span class="tk-num">79990</span>
+  },
+  {
+    <span class="tk-key">"id"</span>: <span class="tk-num">3</span>,
+    <span class="tk-key">"nombre"</span>: <span class="tk-str">"Bóxer algodón pack x3"</span>,
+    <span class="tk-key">"categoria"</span>: <span class="tk-str">"Hombres"</span>,
+    <span class="tk-key">"tipo"</span>: <span class="tk-str">"Ropa interior"</span>,
+    <span class="tk-key">"descripcion"</span>: <span class="tk-str">"Pack de tres bóxers de algodón elástico..."</span>,
+    <span class="tk-key">"image"</span>: <span class="tk-str">"/images/3.jpg"</span>,
+    <span class="tk-key">"precio"</span>: <span class="tk-num">12990</span>
+  },
+  {
+    <span class="tk-key">"id"</span>: <span class="tk-num">4</span>,
+    <span class="tk-key">"nombre"</span>: <span class="tk-str">"Botines taco medio"</span>,
+    <span class="tk-key">"categoria"</span>: <span class="tk-str">"Mujeres"</span>,
+    <span class="tk-key">"tipo"</span>: <span class="tk-str">"Calzado"</span>,
+    <span class="tk-key">"descripcion"</span>: <span class="tk-str">"Botines de cuero sintético con cierre lateral..."</span>,
+    <span class="tk-key">"image"</span>: <span class="tk-str">"/images/4.jpg"</span>,
+    <span class="tk-key">"precio"</span>: <span class="tk-num">34990</span>
+  },
+  {
+    <span class="tk-key">"id"</span>: <span class="tk-num">5</span>,
+    <span class="tk-key">"nombre"</span>: <span class="tk-str">"Gabardina impermeable"</span>,
+    <span class="tk-key">"categoria"</span>: <span class="tk-str">"Mujeres"</span>,
+    <span class="tk-key">"tipo"</span>: <span class="tk-str">"Abrigos"</span>,
+    <span class="tk-key">"descripcion"</span>: <span class="tk-str">"Gabardina clásica con cinturón ajustable..."</span>,
+    <span class="tk-key">"image"</span>: <span class="tk-str">"/images/5.jpg"</span>,
+    <span class="tk-key">"precio"</span>: <span class="tk-num">59990</span>
+  }
+]</code></pre>
     </article>
 
   </section>
@@ -312,48 +346,5 @@
   </footer>
 
 </main>
-<script>
-  (function () {
-    function escapeHtml(s) {
-      return s.replace(/[&<>]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' })[c]; });
-    }
-    function highlight(json) {
-      return escapeHtml(json)
-        .replace(
-          /("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g,
-          function (match) {
-            var cls = 'tk-num';
-            if (/^"/.test(match)) cls = /:$/.test(match) ? 'tk-key' : 'tk-str';
-            return '<span class="' + cls + '">' + match + '</span>';
-          }
-        )
-        .replace(/([{}\[\],])/g, '<span class="tk-punct">$1</span>');
-    }
-    var LIMIT = 5;
-    document.querySelectorAll('pre[data-endpoint]').forEach(function (pre) {
-      var endpoint = pre.dataset.endpoint;
-      fetch(endpoint)
-        .then(function (r) { return r.json(); })
-        .then(function (data) {
-          var preview = data;
-          var hidden = 0;
-          if (Array.isArray(data) && data.length > LIMIT) {
-            preview = data.slice(0, LIMIT);
-            hidden = data.length - LIMIT;
-          }
-          pre.innerHTML = '<code>' + highlight(JSON.stringify(preview, null, 2)) + '</code>';
-          if (hidden > 0) {
-            var note = document.createElement('p');
-            note.className = 'endpoint-more';
-            note.innerHTML = '+ ' + hidden + ' items más · <a href="' + endpoint + '" target="_blank" rel="noopener">ver respuesta completa →</a>';
-            pre.insertAdjacentElement('afterend', note);
-          }
-        })
-        .catch(function () {
-          pre.textContent = 'Error cargando ' + endpoint;
-        });
-    });
-  })();
-</script>
 </body>
 </html>
