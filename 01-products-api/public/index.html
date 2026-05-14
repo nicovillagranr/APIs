@@ -182,6 +182,18 @@
     color: var(--text);
   }
   pre code { color: inherit; background: none; padding: 0; }
+  .endpoint-more {
+    margin: 10px 0 0;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.75rem;
+    color: var(--text-dim);
+  }
+  .endpoint-more a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  .endpoint-more a:hover { border-bottom-color: var(--accent); }
   .tk-key { color: #82cfff; }     /* blue 30 */
   .tk-str { color: var(--success); }
   .tk-num { color: #be95ff; }     /* purple 40 */
@@ -317,14 +329,28 @@
         )
         .replace(/([{}\[\],])/g, '<span class="tk-punct">$1</span>');
     }
+    var LIMIT = 5;
     document.querySelectorAll('pre[data-endpoint]').forEach(function (pre) {
-      fetch(pre.dataset.endpoint)
+      var endpoint = pre.dataset.endpoint;
+      fetch(endpoint)
         .then(function (r) { return r.json(); })
         .then(function (data) {
-          pre.innerHTML = '<code>' + highlight(JSON.stringify(data, null, 2)) + '</code>';
+          var preview = data;
+          var hidden = 0;
+          if (Array.isArray(data) && data.length > LIMIT) {
+            preview = data.slice(0, LIMIT);
+            hidden = data.length - LIMIT;
+          }
+          pre.innerHTML = '<code>' + highlight(JSON.stringify(preview, null, 2)) + '</code>';
+          if (hidden > 0) {
+            var note = document.createElement('p');
+            note.className = 'endpoint-more';
+            note.innerHTML = '+ ' + hidden + ' items más · <a href="' + endpoint + '" target="_blank" rel="noopener">ver respuesta completa →</a>';
+            pre.insertAdjacentElement('afterend', note);
+          }
         })
         .catch(function () {
-          pre.textContent = 'Error cargando ' + pre.dataset.endpoint;
+          pre.textContent = 'Error cargando ' + endpoint;
         });
     });
   })();
