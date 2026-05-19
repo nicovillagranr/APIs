@@ -9,9 +9,12 @@
     "years": 2,
     "availability": "open_to_work",
     "stack": {
-      "frontend": ["React", "Next.js", "TypeScript", "JavaScript"],
-      "styling": ["Tailwind", "Bootstrap", "CSS Modules", "BEM", "UX"],
-      "tools": ["Git", "Docker"]
+      "languages": ["JavaScript", "TypeScript", "HTML", "CSS"],
+      "frontend": ["React", "React Router", "Framer Motion", "Zod"],
+      "styling": ["Tailwind", "Bootstrap", "CSS Modules", "BEM", "Sass", "Less"],
+      "testing": ["Vitest", "Testing Library"],
+      "tools": ["Git", "Vite", "npm", "ESLint", "Prettier", "Docker"],
+      "copilots": ["Claude Code", "Claude Design"]
     }
   },
   "projects": [
