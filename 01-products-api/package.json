@@ -2,6 +2,7 @@
   "name": "products-api",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@10.18.1",
   "description": "API mock de productos para proyecto-2",
   "scripts": {
     "start": "json-server --watch db.json --port 3000 --static public"
