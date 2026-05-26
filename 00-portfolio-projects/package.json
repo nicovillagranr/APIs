@@ -2,6 +2,7 @@
   "name": "portfolio-projects-api",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@10.18.1",
   "description": "API Mock de proyectos del portfolio",
   "scripts": {
     "start": "json-server --watch db.json --port 3000 --static public"
