@@ -22,8 +22,8 @@
       "stack": "No colecciono tecnologías por moda: cada herramienta la elegí resolviendo un problema concreto. React y Tailwind sostienen la UI; Vitest y Testing Library protegen lo que ya funciona; pnpm, Vite y ESLint mantienen el flujo limpio. Prefiero dominar bien lo esencial antes que tocar todo a medias.",
       "stackPillars": [
         { "label": "Pienso", "items": ["arquitectura", "criterio"] },
-        { "label": "Pruebo", "items": ["Vitest", "Testing Library", "tipos estrictos"] },
-        { "label": "Mantengo", "items": ["ESLint", "Prettier", "refactor"] }
+        { "label": "Pruebo", "items": ["Vitest", "Testing Library"] },
+        { "label": "Mantengo", "items": ["ESLint", "Prettier"] }
       ]
     },
     "philosophy": "Nunca dejar de aprender"
