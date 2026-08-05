@@ -284,7 +284,7 @@
         </span>
         <a class="endpoint-link" href="/projects" target="_blank" rel="noopener">Ver respuesta →</a>
       </div>
-      <p class="endpoint-desc">Devuelve el array completo de proyectos del portfolio: nombre, descripción, stack, tipo, estado, imagen y link al repo.</p>
+      <p class="endpoint-desc">Devuelve el array completo de proyectos del portfolio: nombre, descripción, stack, tipo, estado, imagen y link al repo. El primer elemento de <code>stack</code> es siempre el lenguaje del proyecto (<code>"JavaScript"</code> o <code>"TypeScript"</code>): el cliente lo separa del resto para mostrarlo en su propia fila.</p>
 <pre><code>[
   {
     <span class="tk-key">"id"</span>: <span class="tk-num">0</span>,
@@ -292,7 +292,7 @@
     <span class="tk-key">"path"</span>: <span class="tk-str">"https://00-portfolio-projects-api.vercel.app/"</span>,
     <span class="tk-key">"image"</span>: <span class="tk-num">null</span>,
     <span class="tk-key">"description"</span>: <span class="tk-str">"API REST que sirve los proyectos de mi portfolio..."</span>,
-    <span class="tk-key">"stack"</span>: [<span class="tk-str">"Node.js"</span>, <span class="tk-str">"json-server"</span>],
+    <span class="tk-key">"stack"</span>: [<span class="tk-str">"JavaScript"</span>, <span class="tk-str">"Node.js"</span>, <span class="tk-str">"json-server"</span>],
     <span class="tk-key">"type"</span>: <span class="tk-str">"REST API"</span>,
     <span class="tk-key">"status"</span>: <span class="tk-str">"online"</span>,
     <span class="tk-key">"framework"</span>: <span class="tk-str">"APIs"</span>,
@@ -305,7 +305,7 @@
     <span class="tk-key">"path"</span>: <span class="tk-str">"/proyecto-1/"</span>,
     <span class="tk-key">"image"</span>: <span class="tk-str">"https://.../images/proyecto-1.webp"</span>,
     <span class="tk-key">"description"</span>: <span class="tk-str">"Landing de práctica para consolidar layout CSS..."</span>,
-    <span class="tk-key">"stack"</span>: [<span class="tk-str">"Vite"</span>, <span class="tk-str">"React 19"</span>, <span class="tk-str">"CSS modular"</span>],
+    <span class="tk-key">"stack"</span>: [<span class="tk-str">"JavaScript"</span>, <span class="tk-str">"Vite"</span>, <span class="tk-str">"React 19"</span>, <span class="tk-str">"CSS modular"</span>],
     <span class="tk-key">"type"</span>: <span class="tk-str">"Landing"</span>,
     <span class="tk-key">"status"</span>: <span class="tk-str">"online"</span>,
     <span class="tk-key">"framework"</span>: <span class="tk-str">"React"</span>,
@@ -316,21 +316,21 @@
     <span class="tk-key">"id"</span>: <span class="tk-num">2</span>,
     <span class="tk-key">"name"</span>: <span class="tk-str">"ActiveBox"</span>,
     <span class="tk-key">"type"</span>: <span class="tk-str">"Landing"</span>,
-    <span class="tk-key">"stack"</span>: [<span class="tk-str">"Vite"</span>, <span class="tk-str">"React 19"</span>, <span class="tk-str">"CSS modular"</span>],
+    <span class="tk-key">"stack"</span>: [<span class="tk-str">"JavaScript"</span>, <span class="tk-str">"Vite"</span>, <span class="tk-str">"React 19"</span>, <span class="tk-str">"CSS modular"</span>],
     <span class="tk-key">"framework"</span>: <span class="tk-str">"React"</span>
   },
   {
     <span class="tk-key">"id"</span>: <span class="tk-num">3</span>,
     <span class="tk-key">"name"</span>: <span class="tk-str">"NexusAI"</span>,
     <span class="tk-key">"type"</span>: <span class="tk-str">"Landing"</span>,
-    <span class="tk-key">"stack"</span>: [<span class="tk-str">"React 19"</span>, <span class="tk-str">"Tailwind v4"</span>, <span class="tk-str">"Framer Motion"</span>],
+    <span class="tk-key">"stack"</span>: [<span class="tk-str">"JavaScript"</span>, <span class="tk-str">"React 19"</span>, <span class="tk-str">"Tailwind v4"</span>, <span class="tk-str">"Framer Motion"</span>],
     <span class="tk-key">"framework"</span>: <span class="tk-str">"React"</span>
   },
   {
     <span class="tk-key">"id"</span>: <span class="tk-num">4</span>,
     <span class="tk-key">"name"</span>: <span class="tk-str">"MGD Exports"</span>,
     <span class="tk-key">"type"</span>: <span class="tk-str">"Landing"</span>,
-    <span class="tk-key">"stack"</span>: [<span class="tk-str">"React 19"</span>, <span class="tk-str">"Tailwind v4"</span>, <span class="tk-str">"EmailJS"</span>],
+    <span class="tk-key">"stack"</span>: [<span class="tk-str">"JavaScript"</span>, <span class="tk-str">"React 19"</span>, <span class="tk-str">"Tailwind v4"</span>, <span class="tk-str">"EmailJS"</span>],
     <span class="tk-key">"framework"</span>: <span class="tk-str">"React"</span>
   }
 ]</code></pre>
