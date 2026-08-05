@@ -17,7 +17,7 @@
       "copilots": ["Claude Code", "Claude Design"]
     },
     "intro": {
-      "about": "Desarrollador frontend en Santiago de Chile. Construyo interfaces en React pensando en quien las usa: accesibles, rápidas y consistentes. Me importa el código que las sostiene —componentes claros, pruebas que cuidan lo que ya funciona— y la disciplina de mejorar un poco cada día sin atajos.",
+      "about": "Desarrollador frontend en Santiago de Chile. Construyo interfaces en React pensando en quien las usa: accesibles, rápidas y consistentes. Me importa el código que las sostiene — componentes claros, pruebas que cuidan lo que ya funciona — y la disciplina de mejorar un poco cada día sin atajos.",
       "stackHeading": "Cómo trabajo",
       "stack": "No colecciono tecnologías por moda: cada herramienta la elegí resolviendo un problema concreto. React y Tailwind sostienen la UI; Vitest y Testing Library protegen lo que ya funciona; pnpm, Vite y ESLint mantienen el flujo limpio. Prefiero dominar bien lo esencial antes que tocar todo a medias.",
       "stackPillars": [
