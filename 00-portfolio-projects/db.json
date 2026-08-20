@@ -6,6 +6,10 @@
     "linkedin": "https://www.linkedin.com/in/nico-villagran/",
     "role": "Frontend Developer",
     "based": "Santiago, CL",
+    "education": {
+      "degree": "Técnico en Desarrollo de Aplicaciones Web",
+      "institution": "Duoc UC"
+    },
     "years": 2,
     "availability": "open_to_work",
     "stack": {

@@ -344,7 +344,7 @@
         </span>
         <a class="endpoint-link" href="/profile" target="_blank" rel="noopener">Ver respuesta →</a>
       </div>
-      <p class="endpoint-desc">Devuelve el perfil del desarrollador: nombre, contacto, rol, ubicación, años de experiencia, disponibilidad y stack agrupado.</p>
+      <p class="endpoint-desc">Devuelve el perfil del desarrollador: nombre, contacto, rol, ubicación, formación, disponibilidad y stack agrupado.</p>
 <pre><code>{
   <span class="tk-key">"name"</span>: <span class="tk-str">"Nicolás Villagrán"</span>,
   <span class="tk-key">"email"</span>: <span class="tk-str">"nicovillagranroses@gmail.com"</span>,
@@ -352,10 +352,14 @@
   <span class="tk-key">"linkedin"</span>: <span class="tk-str">"https://www.linkedin.com/in/nico-villagran/"</span>,
   <span class="tk-key">"role"</span>: <span class="tk-str">"Frontend Developer"</span>,
   <span class="tk-key">"based"</span>: <span class="tk-str">"Santiago, CL"</span>,
+  <span class="tk-key">"education"</span>: {
+    <span class="tk-key">"degree"</span>: <span class="tk-str">"Técnico en Desarrollo de Aplicaciones Web"</span>,
+    <span class="tk-key">"institution"</span>: <span class="tk-str">"Duoc UC"</span>
+  },
   <span class="tk-key">"years"</span>: <span class="tk-num">2</span>,
   <span class="tk-key">"availability"</span>: <span class="tk-str">"open_to_work"</span>,
   <span class="tk-key">"stack"</span>: {
-    <span class="tk-key">"frontend"</span>: [<span class="tk-str">"React"</span>, <span class="tk-str">"Next.js"</span>, <span class="tk-str">"TypeScript"</span>],
+    <span class="tk-key">"frontend"</span>: [<span class="tk-str">"React"</span>, <span class="tk-str">"React Router"</span>, <span class="tk-str">"Framer Motion"</span>, <span class="tk-str">"Zod"</span>],
     <span class="tk-key">"styling"</span>: [<span class="tk-str">"Tailwind"</span>, <span class="tk-str">"CSS Modules"</span>, <span class="tk-str">"BEM"</span>],
     <span class="tk-key">"tools"</span>: [<span class="tk-str">"Git"</span>, <span class="tk-str">"Docker"</span>]
   }
@@ -366,7 +370,7 @@
 
   <div class="cta">
     <a class="btn btn-primary" href="https://github.com/nicovillagranr/APIs/tree/main/00-portfolio-projects" target="_blank" rel="noopener">Ver código en GitHub</a>
-    <a class="btn btn-ghost" href="https://nicovillagran.com" target="_blank" rel="noopener">Visitar el portfolio</a>
+    <a class="btn btn-ghost" href="https://nico-villagran.com" target="_blank" rel="noopener">Visitar el portfolio</a>
   </div>
 
   <footer>
